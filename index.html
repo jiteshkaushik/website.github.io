@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: teal;
+        }
+     header{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./alex1.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+     }
+     .header-content{
+        margin-bottom: 150px;
+        color: whitesmoke;
+        text-align: center;
+
+     }
+     .header-content h2{
+        font-size:4vmin ;
+     }
+     .line{
+       width: 150px;
+       height: 4px;
+       background: red;
+       margin: 10px auto ;
+       border-radius: 5px;
+     }
+     .header-content h1{
+        font-size: 7vmin;
+        margin-top: 50px;
+        margin-bottom: 30px;
+
+     }
+     .ctn{
+        padding: 8px 15px;
+        background: red;
+        border-radius: 30px;
+        color: white;
+     }
+     /* navbar */
+
+     .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        height: 10vh;
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px;
+        color:rgb(220, 215, 215);
+        position: fixed;
+        background-color: rgb(67, 54, 54);
+       z-index: 110000;
+     }
+     .nav-links{
+      display: flex;
+      align-items: center;
+     }
+     .nav-links li{
+      margin: 0 30px;
+        list-style: none;
+
+     }
+     ul li{
+
+     }
+     .active{
+      color: red;
+      text-decoration: underline;
+      font-weight: bold;
+     }
+     /* events */
+     section{
+      width: 80%;
+      margin: 40px auto;
+
+     }
+     .title{
+      text-align: center;
+      font-size: 4vmin;
+      color:black;
+     }
+     .row{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      /* background: cyan; */
+
+     }
+     .row .col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    
+     }
+     .coll{
+      margin-top: 30px;
+     }
+     .coll img{
+      width: 95%;
+      height: 350px;
+     }
+     .content-col{
+      /* background-color: antiquewhite; */
+      width: 150%;
+     }
+     .col img{
+      width: 100%;
+      margin: 5px 10px;
+     }
+     .events .row{
+      margin-top: 10px;
+      
+     }
+     h4{
+      font-size: 3vmin;
+      color: yellow;
+      margin: 5px auto;
+     }
+     p{
+      color: black;
+      padding: 0px 40px;
+     }
+     .events .ctn{
+      /* margin-top: 30px; */
+      margin-left: 250px;
+     }
+     @media (max-width:940px) and (max-width:850px) {
+      .events .ctn{
+      /* margin-top: 30px; */
+      margin-left: 0px;
+      margin-top: 20px;
+     }
+     }
+     .explore{
+      width: 100%;
+      height: 100vh;
+      background-image: url(./alex5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+     }
+     .explore-content{
+      width: 41%;
+      padding: 50px;
+      color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+     .explore-content h1{
+      font-size: 7vmin;
+      margin: 50px;
+      text-decoration: underline;
+text-decoration-color: red;
+
+     }
+     .explore-content .line{
+      margin-bottom: 50px;
+     }
+     .explore-content p{
+      color:white;
+     }
+     .explore-content.ctn{
+      margin-top: 40px;
+     }
+     /* gallery section */
+      
+     .tours .row .col{
+      width: 50%;
+     }
+     /* .tours .image-gallery{
+      display: flex;
+      flex-wrap: wrap;
+     
+      align-items: center;
+     } */
+     .image-gallery img{
+      width: 200px;
+     }
+     .content-col{
+      width: 40%;
+     }
+     .image-col{
+      width: 60%;
+     }
+     .image-gallery .some{
+      width: 200px;
+      height: 250px;
+
+     }
+     .content-col h1{
+      font-size: 7vmin;
+      text-transform: uppercase;
+     }
+     .content-col .line{
+      margin-left: -1px;
+
+     }
+     .content-col p {
+      padding: 0;
+      margin: 30px auto;
+
+     }
+     .ddd{
+      height: 350px;
+      margin: 10px;
+      padding: 10px;
+     }
+     /* .content-col .ctn{
+      margin-left: -100px;
+     } */
+     .footer{
+      width: 100%;
+      min-height: 100px;
+      padding: 20px 80px;
+      margin: 0;
+      background: bisque;
+      text-align: center;
+
+     }
+     .footer p{
+      color: rgb(28, 6, 6);
+      margin: 20px auto;
+      padding: 20px auto;
+     }
+     img{
+      transition: transform .3s ease;
+     }
+     img:hover{
+      transform: scale(1.1);
+     }
+     .ctn:hover{
+      background:rgb(207, 236, 20) ;
+      color: black;
+      box-shadow: 2px 2px 5px black;
+     }
+    
+     /* event resposible */
+    
+
+
+     /* mobile responsible */
+     @media only screen and (max-width:850px){
+      .navbar{
+         padding: 0;
+      }
+      .logo{
+         position: absolute;
+         
+         left: 30px;
+
+      }
+       .nav-links{
+         flex-direction: column;
+         width: 100%;
+         height:100vh ;
+         justify-content: center;
+         background-color: aqua;
+         margin-top: -900px;
+         transition: all 0.5s ease-in;
+      } 
+      .nav-links li{
+         margin: 30px auto;
+      }
+      .menu-btn{
+         position: absolute;
+         /* top: 30px; */
+         right: 30px;
+         width: 90px;
+         height: 49px;
+         cursor: pointer;
+         display: none;
+      }
+      .mobile-menu{
+         margin-top: 0px;
+         border-bottom-right-radius: 30%;
+      }
+      .menu-btn{
+         display: block;
+      }
+      .row{
+      flex-direction: column;
+      }
+      .explore-content{
+         width: 100%;
+      }
+      .image-col{
+         width: 100%;
+      }
+      .image-gallery{
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         display: block;
+         
+      }
+      .image-gallery img{
+         width: 100%;
+         
+      }
+      .tours .row .col {
+    width: 100%;
+    padding-top: 20px;
+}
+.ctn{
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   margin: auto;
+}
+
+
+     } 
+     .image-gallery{
+      display: grid;
+      grid-template-columns: auto auto;
+     }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="logo">Adventure</h1>
+        <ul class="nav-links">
+            <li class="active">Home<a href=""></a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Explore</a></li>
+            <li><a href="">About</a></li>
+            <li class="ctn"><a  href="#">Contact</a></li>
+        </ul>
+       <img src="./alex2.jpg" width="50" class="menu-btn"> 
+    </div>
+ <header>
+    <div class="header-content">
+        <h2>Explore the colorss full wrld</h2>
+        <div class="line"></div>
+        <h1>a wonderful gift</h1>
+        <a href="" class="ctn">Learn More</a>
+    </div>
+ </header>
+ <!-- events  -->
+ <section class="events">
+   <div class="title">
+      <h1>Upcoming Events</h1>
+      <div class="line"></div>
+   </div>
+   <div class="row">
+      <div class="coll">
+         <img src="./alex3.jpg" width="200"> 
+         <h4>Everest Camp Trek</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laudantium tempora, eos ipsam alias repudiandae.</p>
+         <a href="" class="ctn">Learn More</a>
+      </div>
+      <div class="coll">
+         <img src="./alex3.jpg" width="200"> 
+         <h4>Everest Camp Trek</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laudantium tempora, eos ipsam alias repudiandae.</p>
+         <a href="" class="ctn">Learn More</a>
+      </div>
+   </div>
+ </section>
+ <section class="explore">
+   <div class="explore-content">
+   <h1>Explore the world</h1>
+   <!-- <div class="line"></div> -->
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, nisi.</p>
+   <a href="" class="ctn">Learn more</a>
+   </div>
+   </section>
+
+   <!-- gallery section -->
+   <section class="tours">
+      <div class="row">
+         <div class="col content-col">
+            <h1>upcoing tour & destination</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem maxime iure perferendis explicabo cumque, quia tempora provident saepe quo eos voluptatibus, natus id quis facere aperiam possimus magnam, unde repellat.</p>
+            <a href="" class="ctn">Learn more</a>
+
+         </div>
+         <div class="col image-col ">
+            <div class="image-gallery">
+               <img src="./alex2.jpg" class="ddd" alt="">
+               <img src="./alex5.jpg" class="ddd" alt="">
+               <img src="./alex1.jpg" class="ddd" alt="">
+               <img src="./alex3.jpg" class="ddd" alt="">
+            </div>
+         </div>
+      </div>
+   </section>
+   <div class="footer">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, harum perferendis perspiciatis ut facilis delectus officia dolorem reprehenderit autem odit.</p>
+      <p>Copyright  2020 outdoor Adventure</p>
+   </div>
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const navlinks = document.querySelector('.nav-links');
+      menuBtn.addEventListener('click',() =>{
+         navlinks.classList.toggle('mobile-menu')
+      })
+    </script>
+</body>
+</html>
